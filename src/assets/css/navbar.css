@@ -1,0 +1,385 @@
+.portfolio-navbar{
+    /* position:fixed; */
+    top:20px;
+    left:0;
+    width:100%;
+    z-index:999;
+    background: var(--bg-primary);
+}
+
+.navbar-wrapper{
+
+    max-width:1400px;
+    margin:auto;
+
+    /* background:var(--navbar-bg); */
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid var(--border-color);
+
+    border-radius:24px;
+
+    padding:18px 40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    /* box-shadow:var(--shadow); */
+
+    transition:var(--transition);
+}
+
+/* Logo */
+
+.logo h2{
+    margin:0;
+    font-weight:700;
+
+    color:var(--text-primary);
+}
+
+/* Desktop Menu */
+
+.desktop-menu{
+    display:flex;
+    gap:45px;
+    list-style:none;
+
+    margin:0;
+    padding:0;
+}
+
+.desktop-menu a{
+
+    text-decoration:none;
+
+    color:var(--text-primary);
+
+    font-size:16px;
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.desktop-menu a:hover{
+    color:var(--text-secondary);
+}
+
+/* Right */
+
+.right-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.login-btn{
+
+    text-decoration:none;
+
+    color:var(--text-primary);
+}
+
+/* Theme Button */
+
+.theme-toggle{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:var(--bg-card);
+
+    color:var(--text-primary);
+
+    box-shadow:var(--shadow);
+
+    font-size: 25px;
+}
+
+/* Hire Button */
+
+.demo-btn{
+
+    border:0px;
+
+    /* padding:0px 28px; */
+
+    border-radius:40px;
+
+    background:transparent;
+
+    color:var(--text-primary);
+
+    font-weight:600;
+
+    transition:.3s;
+
+    font-size: 30px;
+}
+
+/* .demo-btn:hover{
+
+    background:
+    var(--button-bg);
+
+    color:
+    var(--button-text);
+} */
+
+.hamburger{
+
+    display:none;
+
+    border:none;
+
+    background:transparent;
+
+    color:var(--text-primary);
+
+    font-size:30px;
+
+    cursor:pointer;
+}
+
+/* Mobile */
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:-100%;
+
+    left:0;
+
+    width:100%;
+
+    background:
+    var(--navbar-bg);
+
+    padding:100px 30px 40px;
+
+    transition:.4s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    z-index:998;
+}
+
+.mobile-menu.active{
+    top:0;
+}
+
+.mobile-menu a{
+
+    text-decoration:none;
+
+    color:var(--text-primary);
+
+    font-size:18px;
+}
+
+.mobile-btn{
+
+    margin-top:20px;
+
+    border:none;
+
+    background:
+    var(--button-bg);
+
+    color:
+    var(--button-text);
+
+    padding:14px;
+
+    border-radius:50px;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+    .desktop-menu{
+        display:none;
+    }
+
+    .hamburger{
+        display:none;
+    }
+
+    .navbar-wrapper{
+        padding:15px 25px;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+    .login-btn{
+        display:none;
+    }
+
+    .demo-btn{
+        display:none;
+    }
+
+    .logo h2{
+        font-size:24px;
+    }
+}
+
+.theme-toggle svg {
+    margin-bottom: 5px;
+}
+
+/* resume */
+.resume-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  padding: 20px;
+}
+
+.resume-modal {
+  width: 100%;
+  max-width: 1000px;
+
+  height: 90vh;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  box-shadow: var(--shadow);
+
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-btn {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: var(--bg-secondary);
+
+  color: var(--text-primary);
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.resume-header {
+  padding: 30px;
+  text-align: center;
+}
+
+.resume-header h2 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.resume-header p {
+  color: var(--text-secondary);
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.resume-btn {
+  padding: 12px 24px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.resume-btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.resume-btn.secondary {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.resume-frame {
+  width: 100%;
+  height: calc(100% - 170px);
+
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .resume-modal {
+    height: 95vh;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .resume-btn {
+    text-align: center;
+  }
+}
+
+.logo a {
+    text-decoration: none;
+}
