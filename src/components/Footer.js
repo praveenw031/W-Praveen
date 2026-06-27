@@ -44,7 +44,7 @@ function Footer() {
           <FaRedditAlien />
         </a>
 
-        <a target="_blank" href="https://www.linkedin.com/in/w-praveen-1ab6aa230">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/w-praveen-1ab6aa230">
           <FaLinkedin />
         </a>
 
