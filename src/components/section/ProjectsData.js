@@ -7,11 +7,11 @@ import brandico from "../../assets/images/brandico.png";
 
 const project1 = brandico;
 
-const project2 =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaMnq7UwT3-TF9TnCu-Gs2-5KsE1RqnIA8TxqE6r_OSYseMF2zDTa7nI&s=10";
+// const project2 =
+//   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaMnq7UwT3-TF9TnCu-Gs2-5KsE1RqnIA8TxqE6r_OSYseMF2zDTa7nI&s=10";
 
-const project3 =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzJ0Z5R5DUIiGa_kNnQPuPrTLARbHbjemN87mq9xQMQznx8Ugb6WP3EDB&s=10";
+// const project3 =
+//   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzJ0Z5R5DUIiGa_kNnQPuPrTLARbHbjemN87mq9xQMQznx8Ugb6WP3EDB&s=10";
 
 const projects = [
   {
@@ -184,8 +184,10 @@ function ProjectsData() {
                 </div>
 
                 <a
-                  href={project.liveLink}
+                  href={project.liveLink || "/"}
                   className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View Live Website →
                 </a>

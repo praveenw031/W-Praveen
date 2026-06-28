@@ -1,19 +1,9 @@
 import React from "react";
 import "../../src/assets/css/footer.css";
+
 import { FaXTwitter } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaGithub, FaLinkedin, FaRedditAlien } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { FaRedditAlien } from "react-icons/fa";
-
-
-import {
-  FaInstagram,
-  FaGithub,
-  FaTwitter,
-  FaTelegramPlane,
-  FaLinkedin,
-  FaFigma,
-} from "react-icons/fa";
 
 function Footer() {
   return (

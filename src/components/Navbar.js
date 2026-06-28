@@ -94,16 +94,13 @@ function Navbar() {
                 }
               </button>
 
-              <a
-                href="#"
+              <button
+                type="button"
                 className="login-btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setShowResume(true);
-                }}
+                onClick={() => setShowResume(true)}
               >
                 Resume
-              </a>
+              </button>
 
               {showResume && (
                 <div
