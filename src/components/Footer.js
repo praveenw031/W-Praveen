@@ -16,7 +16,7 @@ function Footer() {
           <SiGmail />
         </a>
 
-        <a href="/">
+        <a target="_blank" href="https://github.com/praveenw031">
           <FaGithub />
         </a>
 
@@ -48,7 +48,7 @@ function Footer() {
           <SiGmail />
         </a>
 
-        <a href="/">
+        <a target="_blank" href="https://github.com/praveenw031">
           <FaGithub />
         </a>
 
