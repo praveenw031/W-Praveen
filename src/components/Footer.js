@@ -16,7 +16,11 @@ function Footer() {
           <SiGmail />
         </a>
 
-        <a target="_blank" href="https://github.com/praveenw031">
+        <a
+          href="https://github.com/praveenw031"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
 
@@ -48,7 +52,11 @@ function Footer() {
           <SiGmail />
         </a>
 
-        <a target="_blank" href="https://github.com/praveenw031">
+        <a
+          href="https://github.com/praveenw031"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
 
@@ -56,7 +64,11 @@ function Footer() {
           <FaPhoneAlt />
         </a>
 
-        <a href="https://www.linkedin.com/in/w-praveen-1ab6aa230">
+        <a
+          href="https://www.linkedin.com/in/w-praveen-1ab6aa230"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
         </a>
 
